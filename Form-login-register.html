@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký & đăng nhập</title>
+    <link rel="stylesheet" href="./assets/css/Form-L&R.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-6.4.0-(icon)/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img/logo-page.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="form sign_in">
+                <h3>Đăng Nhập</h3>
+                <span>hoặc sử dụng tài khoản của bạn</span>
+
+                <form action="#" id="form_input">
+                    <div class="type">
+                        <input type="text" placeholder="Name" name="" id="name" required>
+
+                    </div>
+                    <div class="type">
+                        <input type="password" placeholder="Password" name="" id="password" required>
+
+                    </div>
+
+                    <div class="forgot">
+                        <a>Quên mật khẩu ?</a>
+                    </div>
+
+                    <button class="btn bkg">Đăng nhập</button>
+                </form>
+            </div>
+    
+            <div class="form sign_up">
+                <h3>Đăng ký</h3>
+                <span>hoặc sử dụng email của bạn để đăng ký</span>
+
+                <form action="#" id="form_input">
+                    <div class="type">
+
+                        <input type="text" name="" placeholder="Name" id="name"  required>
+                    </div>
+                    <div class="type">
+                        
+                        <input type="email" name="" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="type">
+
+                        <input type="password" name="" placeholder="Password" id="password" required>
+                    </div>
+
+                    <button class="btn bkg">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="page page_signIn">
+                <h3>Chào Mừng Trở Lại!</h3>
+                <p>Để có thể dùng nhiều chức năng hơn. Bạn vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+
+                <button class="btn btnSign-in">Đăng Ký <i class="bi bi-arrow-right"></i></button>
+                <a href="./index.html" class="btn btnBack-home">Trở về trang chủ</a>
+            </div>
+
+            <div class="page page_signUp">
+                <h3>Chào bạn!</h3>
+                <p>Nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+
+                <button class="btn btnSign-up"><i class="bi bi-arrow-left"></i> Đăng Nhập</button>
+                    <a href="./index.html" class="btn btnBack-home">Trở về trang chủ</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- link script -->
+    <script>
+        const container = document.querySelector('.container')
+        const btnSignIn = document.querySelector('.btnSign-in')
+        const btnSignUp = document.querySelector('.btnSign-up')
+
+        btnSignIn.addEventListener('click', () => {
+            container.classList.add('active')
+        })
+
+        btnSignUp.addEventListener('click', () => {
+            container.classList.remove('active')
+        })
+    </script>
+</body>
+</html>
