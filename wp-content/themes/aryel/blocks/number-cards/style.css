@@ -1,0 +1,143 @@
+.number-cards__card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 1.2rem;
+    padding: 2rem 0 2rem 3rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 991.98px) {
+    .number-cards__card {
+        height: unset !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .number-cards__card {
+        padding: 2rem;
+    }
+}
+
+.number-cards__number {
+    background: linear-gradient(180deg, #3073be 0%, #6119bf 46.88%, #d942e5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.number-cards__title,
+.number-cards__text {
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.number-cards__left {
+    position: relative;
+}
+
+@media (max-width: 991.98px) {
+    .number-cards__left {
+        top: 0 !important;
+    }
+}
+
+.number-cards__left p:last-of-type {
+    font-size: 1.1rem;
+    line-height: 1.35rem;
+    margin-top: 1.5rem;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.4) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    width: 100%;
+    max-width: 22.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .number-cards__left p:last-of-type {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.number-cards--grid {
+    padding-bottom: 3.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .number-cards--grid {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .number-cards--grid .row .col-lg-6:nth-of-type(even) .number-cards__card {
+        transform: translateY(4.7rem);
+    }
+}
+
+.number-cards--grid .number-cards__number+div {
+    padding-top: 3rem;
+}
+
+@media (max-width: 991.98px) {
+    .number-cards--grid .number-cards__number+div {
+        padding-top: 1.5rem;
+    }
+}
+
+.number-cards--grid .number-cards__title+.number-cards__text {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .number-cards--grid .number-cards__number {
+        font-size: 4rem !important;
+        line-height: 5rem !important;
+    }
+}
+
+.number-cards--row .number-cards__number {
+    font-size: 4rem;
+    line-height: 5.26rem;
+}
+
+.number-cards--row .number-cards__number+div {
+    padding-top: 2.4rem;
+}
+
+.number-cards--row .number-cards__title+.number-cards__text {
+    margin-top: 0.5rem;
+}
+
+.number-cards--row .number-cards__card {
+    height: calc(100% - var(--gutter-x));
+}
+
+@media (max-width: 991.98px) {
+    .number-cards--with-title .number-cards__card:first-of-type {
+        margin-top: 1.6rem;
+    }
+}
+
+.number-cards--with-title .number-cards__card:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+    .number-cards--with-title .number-cards__number {
+        font-size: 4rem !important;
+        line-height: 5rem !important;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

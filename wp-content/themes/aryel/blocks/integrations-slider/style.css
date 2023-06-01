@@ -1,0 +1,130 @@
+.integrations-slider__swiper {
+    margin-top: 4rem;
+}
+
+.integrations-slider__swiper .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.integrations-slider__slide {
+    width: 8.3rem !important;
+}
+
+@media (max-width: 767.98px) {
+    .integrations-slider__slide {
+        width: 4.25rem !important;
+    }
+}
+
+.integrations-slider__slide>div {
+    width: 8.3rem;
+    height: 8.3rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+    .integrations-slider__slide>div {
+        width: 4.25rem;
+        height: 4.25rem;
+    }
+}
+
+.integrations-slider__slide>div img {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .integrations-slider__slide>div img {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+}
+
+.integrations-slider__button {
+    margin-top: 3rem;
+}
+
+@media (max-width: 767.98px) {
+    .integrations-slider__button {
+        margin-top: 2rem;
+    }
+}
+
+.integrations-slider__slider {
+    position: relative;
+}
+
+.integrations-slider__control {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+}
+
+@media (max-width: 767.98px) {
+    .integrations-slider__control {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.integrations-slider__control::before {
+    content: "";
+    height: 0.6rem;
+    width: 0.6rem;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.1rem;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    opacity: 0.8;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 767.98px) {
+    .integrations-slider__control::before {
+        border-top-width: 2px;
+        border-right-width: 2px;
+    }
+}
+
+.integrations-slider__control--next {
+    right: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .integrations-slider__control--next {
+        right: 0.5rem;
+    }
+}
+
+.integrations-slider__control--prev {
+    left: 1rem;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 767.98px) {
+    .integrations-slider__control--prev {
+        left: 0.5rem;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

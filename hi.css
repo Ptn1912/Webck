@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+p {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 800px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1100px;
+  height: 1100px;
+  background-image: conic-gradient(transparent, transparent, transparent, #a909da);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+  transition: all 0.2s linear;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1100px;
+  height: 1100px;
+  background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+  animation: animate 4s linear infinite;
+  transition: all 0.2s linear;
+}
+
+.box .formLogin {
+  position: absolute;
+  inset: 5px;
+  border-radius: 16px;
+  background: #0c1022;
+  z-index: 1;
+}
+
+.box .formLogin .closeButton1 {
+  color: white;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 45px;
+}
+
+.box .formLogin__title {
+  text-align: center;
+  padding: 20px;
+  margin: 90px;
+  font-size: 55px;
+  font-weight: 700;
+  background-image: linear-gradient(to left, #a909da, #00ccff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.box .formLogin__input-group {
+  color: white;
+  margin-top: 25px;
+  font-size: 25px;
+  line-height: 12.5px;
+}
+
+.box .formLogin__input-group .label {
+  display: block;
+  color: #9ca3af;
+  margin-bottom: 15px;
+  margin-left: 80px;
+}
+
+.box .formLogin__input-group .input {
+  width: 70%;
+  height: 60px;
+  margin-left: 80px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  outline: 0;
+  background-color: #111827;
+  padding: 0.75rem 1rem;
+  color: #f3f4f6;
+  font-size: 18px;
+}
+
+.box .formLogin__forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #9ca3af;
+  margin: 8px 0 14px 0;
+}
+
+.box .formLogin__forgot a {
+  margin-top: 30px;
+  margin-right: 95px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.box .formLogin__button {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  margin: 30px auto;
+  font-size: 30px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #a909da, #00ccff);
+  border: none;
+}
+
+.box .formLogin__end {
+  text-align: center;
+}
+
+.box .formLogin__end-question,
+.box .formLogin__end-Signup {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px 0;
+}
+
+.box .formLogin__end-question {
+  color: rgba(255, 255, 255, 0.548);
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.box .formLogin__end-Signup a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.box .formSignup {
+  position: absolute;
+  inset: 5px;
+  border-radius: 16px;
+  background: #0c1022;
+  z-index: 1;
+}
+
+
+.box .formSignup .closeButton2 {
+  color: white;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 45px;
+}
+
+.box .formSignup__title {
+  text-align: center;
+  padding: 10px;
+  margin: 40px;
+  font-size: 55px;
+  font-weight: 700;
+  background-image: linear-gradient(to left, #a909da, #00ccff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.box .formSignup__input-group {
+  color: white;
+  font-size: 25px;
+  display: block;
+  margin-top: 35px;
+  margin-left: 70px;
+}
+
+.box .formSignup__input-group .input {
+  width: 75%;
+  height: 60px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  outline: 0;
+  background-color: #111827;
+  padding: 0.75rem 1rem;
+  color: #f3f4f6;
+  font-size: 18px;
+}
+
+.box .formSignup__button {
+  width: 30%;
+  height: 60px;
+  display: flex;
+  margin: 30px auto;
+  font-size: 30px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #a909da, #00ccff);
+  border: none;
+}
+
+.box .formSignup__end {
+  text-align: center;
+}
+
+.box .formSignup__end-question,
+.box .formSignup__end-Login {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.box .formSignup__end-question {
+  color: rgba(255, 255, 255, 0.548);
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.box .formSignup__end-Login a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 10000;
+}
+
+.show {
+  display: block;
+}
+
+.open {
+  display: block;
+  /* Hiển thị overlay khi form được hiển thị */
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+}

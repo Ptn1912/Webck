@@ -1,0 +1,264 @@
+.html-text * {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.html-text .container p+*,
+.html-text .container ul+*,
+.html-text .container ol+*,
+.html-text .container h1+*,
+.html-text .container h2+*,
+.html-text .container h3+*,
+.html-text .container h4+*,
+.html-text .container h5+*,
+.html-text .container h6+* {
+    margin-top: 1.2rem;
+}
+
+.html-text .container p+h1,
+.html-text .container p+h2,
+.html-text .container p+h3,
+.html-text .container ul+h1,
+.html-text .container ul+h2,
+.html-text .container ul+h3,
+.html-text .container ol+h1,
+.html-text .container ol+h2,
+.html-text .container ol+h3,
+.html-text .container h1+h1,
+.html-text .container h1+h2,
+.html-text .container h1+h3,
+.html-text .container h2+h1,
+.html-text .container h2+h2,
+.html-text .container h2+h3,
+.html-text .container h3+h1,
+.html-text .container h3+h2,
+.html-text .container h3+h3,
+.html-text .container h4+h1,
+.html-text .container h4+h2,
+.html-text .container h4+h3,
+.html-text .container h5+h1,
+.html-text .container h5+h2,
+.html-text .container h5+h3,
+.html-text .container h6+h1,
+.html-text .container h6+h2,
+.html-text .container h6+h3 {
+    margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+    .html-text .container p+h1,
+    .html-text .container p+h2,
+    .html-text .container p+h3,
+    .html-text .container ul+h1,
+    .html-text .container ul+h2,
+    .html-text .container ul+h3,
+    .html-text .container ol+h1,
+    .html-text .container ol+h2,
+    .html-text .container ol+h3,
+    .html-text .container h1+h1,
+    .html-text .container h1+h2,
+    .html-text .container h1+h3,
+    .html-text .container h2+h1,
+    .html-text .container h2+h2,
+    .html-text .container h2+h3,
+    .html-text .container h3+h1,
+    .html-text .container h3+h2,
+    .html-text .container h3+h3,
+    .html-text .container h4+h1,
+    .html-text .container h4+h2,
+    .html-text .container h4+h3,
+    .html-text .container h5+h1,
+    .html-text .container h5+h2,
+    .html-text .container h5+h3,
+    .html-text .container h6+h1,
+    .html-text .container h6+h2,
+    .html-text .container h6+h3 {
+        margin-top: 1.6rem;
+    }
+}
+
+.html-text .container p+h4,
+.html-text .container p+h5,
+.html-text .container ul+h4,
+.html-text .container ul+h5,
+.html-text .container ol+h4,
+.html-text .container ol+h5,
+.html-text .container h1+h4,
+.html-text .container h1+h5,
+.html-text .container h2+h4,
+.html-text .container h2+h5,
+.html-text .container h3+h4,
+.html-text .container h3+h5,
+.html-text .container h4+h4,
+.html-text .container h4+h5,
+.html-text .container h5+h4,
+.html-text .container h5+h5,
+.html-text .container h6+h4,
+.html-text .container h6+h5 {
+    margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+    .html-text .container p+h4,
+    .html-text .container p+h5,
+    .html-text .container ul+h4,
+    .html-text .container ul+h5,
+    .html-text .container ol+h4,
+    .html-text .container ol+h5,
+    .html-text .container h1+h4,
+    .html-text .container h1+h5,
+    .html-text .container h2+h4,
+    .html-text .container h2+h5,
+    .html-text .container h3+h4,
+    .html-text .container h3+h5,
+    .html-text .container h4+h4,
+    .html-text .container h4+h5,
+    .html-text .container h5+h4,
+    .html-text .container h5+h5,
+    .html-text .container h6+h4,
+    .html-text .container h6+h5 {
+        margin-top: 1.2rem;
+    }
+}
+
+.html-text .container h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 3.9rem;
+}
+
+@media (max-width: 767px) {
+    .html-text .container h1 {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+    }
+}
+
+.html-text .container h2 {
+    font-weight: 700;
+    font-size: 2.9rem;
+    line-height: 3.25rem;
+}
+
+@media (max-width: 767px) {
+    .html-text .container h2 {
+        font-size: 1.4rem;
+        line-height: 1.65rem;
+    }
+}
+
+.html-text .container h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+@media (max-width: 767px) {
+    .html-text .container h3 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        letter-spacing: -0.035rem;
+    }
+}
+
+.html-text .container h4 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+
+@media (max-width: 767px) {
+    .html-text .container h4 {
+        font-size: 0.8rem;
+        line-height: 0.95rem;
+    }
+}
+
+.html-text .container h5 {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+}
+
+@media (max-width: 767px) {
+    .html-text .container h5 {
+        font-size: 0.8rem;
+        line-height: 0.95rem;
+    }
+}
+
+.html-text .container h6 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.55rem;
+    letter-spacing: -0.035rem;
+}
+
+@media (max-width: 767px) {
+    .html-text .container h6 {
+        font-size: 0.8rem;
+        line-height: 0.95rem;
+    }
+}
+
+.html-text .container p,
+.html-text .container ul,
+.html-text .container ol {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+}
+
+.html-text .container iframe {
+    width: 100%;
+    height: 30rem;
+    border-radius: 1.2rem;
+}
+
+.html-text .container a {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.html-text .container b,
+.html-text .container strong {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    font-weight: 700;
+}
+
+.html-text .container ul {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.html-text .container ul li {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    position: relative;
+}
+
+.html-text .container ul li+li {
+    margin-top: 0.35rem;
+}
+
+.html-text .container ul li::before {
+    content: "";
+    height: 0.3rem;
+    width: 0.3rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #3c29a5 0%, #de43e7 100%);
+    position: absolute;
+    top: 0.5rem;
+    left: -1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
